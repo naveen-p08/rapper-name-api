@@ -37,6 +37,6 @@ app.get('/api/:name', (request, response) => {
 
 const PORT = 8000
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`server is running on port ${PORT}`)
 })
